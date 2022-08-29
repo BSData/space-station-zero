@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="2d4a-8d14-23cf-0e21" name="Crew" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="c61d-e0ff-2c07-f041" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="4361-a6fa-ab22-f746" name="Chief Engineer" hidden="false" collective="false" import="true" targetId="330b-fb87-d060-d287" type="selectionEntry"/>
+    <entryLink id="30a6-a206-acc7-5259" name="Ace Pilot" hidden="false" collective="false" import="true" targetId="a83a-5ddf-c192-8aa5" type="selectionEntry"/>
+    <entryLink id="72dd-67d0-4f88-fd79" name="Lead Scientist" hidden="false" collective="false" import="true" targetId="469b-bd52-d0d6-fbab" type="selectionEntry"/>
+    <entryLink id="9459-618d-e2f5-33a9" name="Senior Physician" hidden="false" collective="false" import="true" targetId="fe39-0e97-69b0-13cb" type="selectionEntry"/>
+    <entryLink id="dd76-6e50-b237-93ec" name="Soldier" hidden="false" collective="false" import="true" targetId="29c1-a82a-1972-389a" type="selectionEntry"/>
+    <entryLink id="13b8-ea5a-1e03-75c7" name="Scientist" hidden="false" collective="false" import="true" targetId="5b47-e886-8365-ddde" type="selectionEntry"/>
+    <entryLink id="b28f-8dab-a99f-cbfa" name="Medical Officer" hidden="false" collective="false" import="true" targetId="2134-f74f-8371-b3b5" type="selectionEntry"/>
+    <entryLink id="9755-ca52-9f44-01ac" name="Pilot" hidden="false" collective="false" import="true" targetId="4382-1883-4af1-8194" type="selectionEntry"/>
+    <entryLink id="0b03-cc31-f9a4-6b32" name="Veteran Soldier" hidden="false" collective="false" import="true" targetId="8c0f-44dd-e7c5-964e" type="selectionEntry"/>
+    <entryLink id="b2d1-5d63-9f00-1981" name="Engineer" hidden="false" collective="false" import="true" targetId="a85a-a38c-f7fd-4e70" type="selectionEntry"/>
+    <entryLink id="c219-e472-b501-4304" name="Commander" hidden="false" collective="false" import="true" targetId="21ca-dfa4-8264-0cbb" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a333-bff3-caf0-08cd" type="min"/>
+      </constraints>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="a85a-a38c-f7fd-4e70" name="Engineer" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="3e0e-9253-5b80-a561" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3e0e-9253-5b80-a561" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="69f0-c793-0121-05f4" name="Weapon Tuning" hidden="false">
+          <description>At the start of a Challenge, as long as the Engineer is present in the crew and alive, they may select a single Weapon and increase the bonus to the combat Stat for that weapon by 1. This bonus is retained for that challenge only. This bonus may not be applied to a single Weapon more than once (in the case of multiple engineers).							</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="4f25-1d33-91ec-be03" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Engineer"/>
+            <modifier type="increment" field="003c-4932-401d-6873" value="1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="fc69-1b76-65bb-4f83" name="Standard Crew" hidden="false" targetId="bf8f-1a81-fd98-0e6d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="afe5-0372-0f6f-544d" name="Gear" hidden="false" collective="false" import="true" targetId="67b7-40e9-ba71-a0c6" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="2134-f74f-8371-b3b5" name="Medical Officer" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="464e-3c00-327f-6806" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="464e-3c00-327f-6806" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="63dd-0a20-400f-e4dc" name="Medical Attention" hidden="false">
+          <description>As an action, a Medical Officer may make an Intelligence Challege Test X (6+) on any crew member or enemy creature - including themselves - that is within 1&quot; with at least 1 Life remaining. Each success restores 1 point of Life to that crew member or creature.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="d31f-a194-5f80-a685" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Medical Officer"/>
+            <modifier type="increment" field="89aa-049e-2e85-0778" value="1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1800-536e-a744-f7af" name="Standard Crew" hidden="false" targetId="bf8f-1a81-fd98-0e6d" primary="true"/>
+        <categoryLink id="6bde-a6e4-be55-6771" name="Medical Officer" hidden="false" targetId="0629-5210-24f5-53f3" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a235-2f38-7f44-75d4" name="Gear" hidden="false" collective="false" import="true" targetId="67b7-40e9-ba71-a0c6" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="29c1-a82a-1972-389a" name="Soldier" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="096d-eae5-237c-91df" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="096d-eae5-237c-91df" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="e132-eca1-bec0-ba5c" name="Combat Specialist" hidden="false">
+          <description>Once per turn, when the Soldier makes a Combat Challenge Test, they may select any two dice from the results and reroll those dice.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="95df-c62e-eea2-917b" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Soldier"/>
+            <modifier type="increment" field="2a17-4eba-5384-0241" value="1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2f1b-cc9d-21e4-b748" name="Standard Crew" hidden="false" targetId="bf8f-1a81-fd98-0e6d" primary="true"/>
+        <categoryLink id="b949-43b8-ff2d-1732" name="Soldier Crew" hidden="false" targetId="7134-7ced-1147-702f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="20af-8358-fc0b-4f43" name="Gear" hidden="false" collective="false" import="true" targetId="67b7-40e9-ba71-a0c6" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="fe39-0e97-69b0-13cb" name="Senior Physician" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b87-fbc1-166e-0963" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="c79b-447a-963b-10ce" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c79b-447a-963b-10ce" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="9d26-02e8-5af9-90f3" name="Improved Medical Attention" hidden="false">
+          <description>The Senior Physician has the Medical Attention ability of the Medical officer. In addition, when they use this ability, they may restore 2 points of Life for each success on this check instead of 1.</description>
+        </rule>
+        <rule id="87e1-5e84-81ea-0745" name="Medical Attention" hidden="false">
+          <description>As an action, a Medical Officer may make an Intelligence Challege Test X (6+) on any crew member or enemy creature - including themselves - that is within 1&quot; with at least 1 Life remaining. Each success restores 1 point of Life to that crew member or creature.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="e26f-0a3a-49a6-bff9" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Senior Physician"/>
+            <modifier type="increment" field="89aa-049e-2e85-0778" value="2"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b2b1-de06-de14-549a" name="New CategoryLink" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="true"/>
+        <categoryLink id="af00-12a0-9c64-8e0a" name="Medical Officer" hidden="false" targetId="0629-5210-24f5-53f3" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7893-b064-8853-ef65" name="Gear" hidden="false" collective="false" import="true" targetId="67b7-40e9-ba71-a0c6" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="5b47-e886-8365-ddde" name="Scientist" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b87-fbc1-166e-0963" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="9d23-84ca-9014-c75f" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9d23-84ca-9014-c75f" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="c96e-1085-2956-f5f7" name="Armor Tuning" hidden="false">
+          <description>At the start of a Challenge, as long as the Scientist is present in the crew and alive, they may select a single Armor and increase the Armor value of that Armor by 2. This bonus is retained for that challenge only. This bonus may not be applied to a single Armor more than once (in the case of multiple Scientists).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="5439-3562-b34e-5043" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Scientist"/>
+            <modifier type="increment" field="89aa-049e-2e85-0778" value="1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="977d-a203-e95b-3c66" name="Standard Crew" hidden="false" targetId="bf8f-1a81-fd98-0e6d" primary="true"/>
+        <categoryLink id="eb5a-c5d3-2d49-35e8" name="Scientist Crew" hidden="false" targetId="95ec-fa90-9402-5efb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="da55-32de-ed6a-2e23" name="Gear" hidden="false" collective="false" import="true" targetId="67b7-40e9-ba71-a0c6" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="4382-1883-4af1-8194" name="Pilot" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="abe9-ec1d-12f0-a016" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="abe9-ec1d-12f0-a016" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="8bca-5a08-3e97-e328" name="Awareness" hidden="false">
+          <description>Whenever a Pilot crew member makes a Reaction Challenge Test to avoid damage or spot a Hidden creature, they may roll two additional dice. </description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="3711-6010-7f32-a040" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Pilot"/>
+            <modifier type="increment" field="003c-4932-401d-6873" value="1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="77d7-9523-302b-a32d" name="Standard Crew" hidden="false" targetId="bf8f-1a81-fd98-0e6d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b986-5ac0-5b6a-01ba" name="Gear" hidden="false" collective="false" import="true" targetId="67b7-40e9-ba71-a0c6" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="469b-bd52-d0d6-fbab" name="Lead Scientist" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b87-fbc1-166e-0963" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="ad55-0607-d9cb-245b" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ad55-0607-d9cb-245b" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="4143-e769-fdb9-64b4" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Lead Scientist"/>
+            <modifier type="increment" field="89aa-049e-2e85-0778" value="2"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="20d7-9438-ad0a-f7f5" name="New CategoryLink" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="true"/>
+        <categoryLink id="2127-31a4-1b37-7e99" name="Scientist Crew" hidden="false" targetId="95ec-fa90-9402-5efb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="434e-8137-6d71-cf48" name="Gear" hidden="false" collective="false" import="true" targetId="67b7-40e9-ba71-a0c6" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="8c0f-44dd-e7c5-964e" name="Veteran Soldier" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b87-fbc1-166e-0963" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="af1a-b9d6-cee5-642e" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="af1a-b9d6-cee5-642e" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="7b84-c0e1-7262-a869" name="Hard to Kill" hidden="false">
+          <description>Whenever a Veteran Soldier suffers damage as the result of a Combat Challenge Test, reduce the damage they suffer by 1 to a minimum of 0.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="b4f1-1bac-c020-7296" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Veteran Soldier"/>
+            <modifier type="increment" field="2a17-4eba-5384-0241" value="2"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9d29-0910-9650-8c19" name="New CategoryLink" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="true"/>
+        <categoryLink id="c75f-ce6f-8640-c907" name="Soldier Crew" hidden="false" targetId="7134-7ced-1147-702f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="74b7-1f9c-15a3-46ef" name="Gear" hidden="false" collective="false" import="true" targetId="67b7-40e9-ba71-a0c6" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="330b-fb87-d060-d287" name="Chief Engineer" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b87-fbc1-166e-0963" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="a38a-8d44-f9d8-c7c1" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a38a-8d44-f9d8-c7c1" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="8e24-da49-0c5c-2219" name="Bypass" hidden="false">
+          <description>Once per Challenge, when making an Intelligence or Reaction Challenge test as an Action during their Activation, they may treat the Target Number as 0 instead of its normal value.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="be5a-47e5-dc86-c601" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Chief Engineer"/>
+            <modifier type="increment" field="003c-4932-401d-6873" value="1"/>
+            <modifier type="increment" field="89aa-049e-2e85-0778" value="1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="70e3-3280-6e3d-7bfc" name="New CategoryLink" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="10de-c639-bdb8-6ff4" name="Gear" hidden="false" collective="false" import="true" targetId="67b7-40e9-ba71-a0c6" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="a83a-5ddf-c192-8aa5" name="Ace Pilot" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="f9d8-05a2-bf91-69a7" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f9d8-05a2-bf91-69a7" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="b3c6-4484-9295-e4fe" name="Awareness" hidden="false">
+          <description>Whenever a Pilot crew member makes a Reaction Challenge Test to avoid damage or spot a Hidden creature, they may roll two additional dice. </description>
+        </rule>
+        <rule id="2d0c-c993-76fc-c7c5" name="Ultimate Ace" hidden="false">
+          <description>Whenever the Ace Pilot makes a Challenge Test roll, they may reroll a single dice result of 1.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="bb44-4b29-bc98-ce08" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Ace Pilot"/>
+            <modifier type="increment" field="003c-4932-401d-6873" value="2"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6c0e-c439-9533-2a13" name="New CategoryLink" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3371-2aa9-bf6d-8cf5" name="Gear" hidden="false" collective="false" import="true" targetId="67b7-40e9-ba71-a0c6" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="21ca-dfa4-8264-0cbb" name="Commander" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="d7b2-3dff-fc12-e6c6" name="Logistics Expert" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Once per turn, whenever a crew member - including the Commander - begins an activation within 3 inches of the Commander with the Logistics Expert ability, they may move twice their Move stat in inches (this does not cost their action, and they may still use their atction to move as normal).</description>
+        </rule>
+        <rule id="2237-f720-9ac1-0d06" name="Practiced Scientist" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Whenever a commander with the Practiced Scientist ability uses Intelligence in a Challenge Test and fails a check, they may immediately reroll that check.</description>
+        </rule>
+        <rule id="f91c-3261-f693-9a11" name="Senior Doctor" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>A commander with the Senior Doctor ability can use Medical Attention in the same manner as a Medical Officer and may reroll one of the dice when they make such a check.</description>
+        </rule>
+        <rule id="dedb-c51c-c71a-61a7" name="Sneaky Scoundrel" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b87-fbc1-166e-0963" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Once per turn, when an opponent makes a roll to retain Initiative (see page 13), a Commander with the Sneaky Scoundrel ability may force the opponent to reroll that roll. </description>
+        </rule>
+        <rule id="7694-3db0-3b8d-d0d6" name="Survival Specialist" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Once per game, when a member of the Commander&apos;s crew would be reduced to 0 Life, they are not. Instead, whatever damage was dealt by that Challenge Test is ignored. The Commander may use this ability on themselves.</description>
+        </rule>
+        <rule id="6fc1-87bc-e6f2-cd9f" name="Warmaster" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Whenever a commander with the Warmaster ability makes a Combat Challenge Test (to attack or defend), they may select their highest odd roll and move it up one pip to the next highest even result (e.g. if the highsest odd roll was a 9, the Commander may change that result to a 10). This may result in a Critical Success or remove a Critical Failure.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="4e94-932d-f672-91e6" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Commander"/>
+            <modifier type="increment" field="89aa-049e-2e85-0778" value="1">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="2a17-4eba-5384-0241" value="1">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="e55d-36f3-1e0a-53ea" value="1">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b87-fbc1-166e-0963" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="003c-4932-401d-6873" value="1">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="b501-b91d-5b89-30d5" value="1">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a594-02e5-5b4b-23d7" name="New CategoryLink" hidden="false" targetId="01df-3bb2-8611-ac18" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="09a1-8443-a76a-39bd" name="Gear" hidden="false" collective="false" import="true" targetId="67b7-40e9-ba71-a0c6" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
