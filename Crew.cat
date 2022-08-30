@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2d4a-8d14-23cf-0e21" name="Crew" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="c61d-e0ff-2c07-f041" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2d4a-8d14-23cf-0e21" name="Crew" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="c61d-e0ff-2c07-f041" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="4361-a6fa-ab22-f746" name="Chief Engineer" hidden="false" collective="false" import="true" targetId="330b-fb87-d060-d287" type="selectionEntry"/>
     <entryLink id="30a6-a206-acc7-5259" name="Ace Pilot" hidden="false" collective="false" import="true" targetId="a83a-5ddf-c192-8aa5" type="selectionEntry"/>
@@ -123,6 +123,7 @@
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -283,6 +284,7 @@
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b87-fbc1-166e-0963" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -545,12 +547,48 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" field="2a17-4eba-5384-0241" value="1">
+              <repeats>
+                <repeat field="selections" scope="21ca-dfa4-8264-0cbb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c3ea-6324-162a-11e0" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="89aa-049e-2e85-0778" value="1">
+              <repeats>
+                <repeat field="selections" scope="21ca-dfa4-8264-0cbb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5c44-2fb3-57e8-4176" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="003c-4932-401d-6873" value="1">
+              <repeats>
+                <repeat field="selections" scope="21ca-dfa4-8264-0cbb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c17-d1a2-8144-67a6" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e55d-36f3-1e0a-53ea" value="1">
+              <repeats>
+                <repeat field="selections" scope="21ca-dfa4-8264-0cbb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f0fa-4f08-fe6a-f75d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b501-b91d-5b89-30d5" value="1">
+              <repeats>
+                <repeat field="selections" scope="21ca-dfa4-8264-0cbb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a1a1-9291-0c74-885d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a594-02e5-5b4b-23d7" name="New CategoryLink" hidden="false" targetId="01df-3bb2-8611-ac18" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9967-4ac2-5e12-5a56" name="Stat Points" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="a1a1-9291-0c74-885d" name="+1 Life" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="5c44-2fb3-57e8-4176" name="+1 Intelligence" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="f0fa-4f08-fe6a-f75d" name="+1 Move" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="c3ea-6324-162a-11e0" name="+1 Combat" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="7c17-d1a2-8144-67a6" name="+1 Reaction" hidden="false" collective="false" import="true" type="upgrade"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="09a1-8443-a76a-39bd" name="Gear" hidden="false" collective="false" import="true" targetId="67b7-40e9-ba71-a0c6" type="selectionEntryGroup"/>
       </entryLinks>
