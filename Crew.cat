@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2d4a-8d14-23cf-0e21" name="Crew" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="c61d-e0ff-2c07-f041" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2d4a-8d14-23cf-0e21" name="Crew" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="c61d-e0ff-2c07-f041" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="4361-a6fa-ab22-f746" name="Chief Engineer" hidden="false" collective="false" import="true" targetId="330b-fb87-d060-d287" type="selectionEntry"/>
     <entryLink id="30a6-a206-acc7-5259" name="Ace Pilot" hidden="false" collective="false" import="true" targetId="a83a-5ddf-c192-8aa5" type="selectionEntry"/>
@@ -29,11 +29,6 @@
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3e0e-9253-5b80-a561" type="max"/>
       </constraints>
-      <rules>
-        <rule id="69f0-c793-0121-05f4" name="Weapon Tuning" hidden="false">
-          <description>At the start of a Challenge, as long as the Engineer is present in the crew and alive, they may select a single Weapon and increase the bonus to the combat Stat for that weapon by 1. This bonus is retained for that challenge only. This bonus may not be applied to a single Weapon more than once (in the case of multiple engineers).							</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="4f25-1d33-91ec-be03" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
           <modifiers>
@@ -41,6 +36,7 @@
             <modifier type="increment" field="003c-4932-401d-6873" value="1"/>
           </modifiers>
         </infoLink>
+        <infoLink id="51d3-f0e3-4260-06ba" name="Engineer" hidden="false" targetId="8777-421f-f998-b85d" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="fc69-1b76-65bb-4f83" name="Standard Crew" hidden="false" targetId="bf8f-1a81-fd98-0e6d" primary="true"/>
@@ -60,11 +56,6 @@
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="464e-3c00-327f-6806" type="max"/>
       </constraints>
-      <rules>
-        <rule id="63dd-0a20-400f-e4dc" name="Medical Attention" hidden="false">
-          <description>As an action, a Medical Officer may make an Intelligence Challege Test X (6+) on any crew member or enemy creature - including themselves - that is within 1&quot; with at least 1 Life remaining. Each success restores 1 point of Life to that crew member or creature.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="d31f-a194-5f80-a685" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
           <modifiers>
@@ -72,6 +63,7 @@
             <modifier type="increment" field="89aa-049e-2e85-0778" value="1"/>
           </modifiers>
         </infoLink>
+        <infoLink id="6b8d-3b2e-4763-79df" name="Medical Attention" hidden="false" targetId="70f5-2a04-9bd4-48f9" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1800-536e-a744-f7af" name="Standard Crew" hidden="false" targetId="bf8f-1a81-fd98-0e6d" primary="true"/>
@@ -92,11 +84,6 @@
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="096d-eae5-237c-91df" type="max"/>
       </constraints>
-      <rules>
-        <rule id="e132-eca1-bec0-ba5c" name="Combat Specialist" hidden="false">
-          <description>Once per turn, when the Soldier makes a Combat Challenge Test, they may select any two dice from the results and reroll those dice.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="95df-c62e-eea2-917b" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
           <modifiers>
@@ -104,6 +91,7 @@
             <modifier type="increment" field="2a17-4eba-5384-0241" value="1"/>
           </modifiers>
         </infoLink>
+        <infoLink id="c9bb-a51c-c24c-ca6a" name="Combat Specialist" hidden="false" targetId="1841-cbd4-53e3-9131" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2f1b-cc9d-21e4-b748" name="Standard Crew" hidden="false" targetId="bf8f-1a81-fd98-0e6d" primary="true"/>
@@ -137,14 +125,13 @@
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c79b-447a-963b-10ce" type="max"/>
       </constraints>
-      <rules>
-        <rule id="9d26-02e8-5af9-90f3" name="Improved Medical Attention" hidden="false">
-          <description>The Senior Physician has the Medical Attention ability of the Medical officer. In addition, when they use this ability, they may restore 2 points of Life for each success on this check instead of 1.</description>
-        </rule>
-        <rule id="87e1-5e84-81ea-0745" name="Medical Attention" hidden="false">
-          <description>As an action, a Medical Officer may make an Intelligence Challege Test X (6+) on any crew member or enemy creature - including themselves - that is within 1&quot; with at least 1 Life remaining. Each success restores 1 point of Life to that crew member or creature.</description>
-        </rule>
-      </rules>
+      <profiles>
+        <profile id="e7fe-bd33-4929-8cba" name="Senior Physician" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="e585-89bf-f703-d629">The Senior Physician has the Medical Attention ability of the Medical officer. In addition, when they use this ability, they may restore 2 points of Life for each success on this check instead of 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
         <infoLink id="e26f-0a3a-49a6-bff9" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
           <modifiers>
@@ -152,6 +139,7 @@
             <modifier type="increment" field="89aa-049e-2e85-0778" value="2"/>
           </modifiers>
         </infoLink>
+        <infoLink id="9cbf-c718-9469-8a2f" name="Medical Attention" hidden="false" targetId="70f5-2a04-9bd4-48f9" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b2b1-de06-de14-549a" name="New CategoryLink" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="true"/>
@@ -182,11 +170,6 @@
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9d23-84ca-9014-c75f" type="max"/>
       </constraints>
-      <rules>
-        <rule id="c96e-1085-2956-f5f7" name="Armor Tuning" hidden="false">
-          <description>At the start of a Challenge, as long as the Scientist is present in the crew and alive, they may select a single Armor and increase the Armor value of that Armor by 2. This bonus is retained for that challenge only. This bonus may not be applied to a single Armor more than once (in the case of multiple Scientists).</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="5439-3562-b34e-5043" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
           <modifiers>
@@ -194,6 +177,7 @@
             <modifier type="increment" field="89aa-049e-2e85-0778" value="1"/>
           </modifiers>
         </infoLink>
+        <infoLink id="b6af-5c7b-56db-960e" name="Armor Tuning" hidden="false" targetId="c5ba-a599-f623-8044" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="977d-a203-e95b-3c66" name="Standard Crew" hidden="false" targetId="bf8f-1a81-fd98-0e6d" primary="true"/>
@@ -214,11 +198,6 @@
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="abe9-ec1d-12f0-a016" type="max"/>
       </constraints>
-      <rules>
-        <rule id="8bca-5a08-3e97-e328" name="Awareness" hidden="false">
-          <description>Whenever a Pilot crew member makes a Reaction Challenge Test to avoid damage or spot a Hidden creature, they may roll two additional dice. </description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="3711-6010-7f32-a040" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
           <modifiers>
@@ -226,6 +205,7 @@
             <modifier type="increment" field="003c-4932-401d-6873" value="1"/>
           </modifiers>
         </infoLink>
+        <infoLink id="a26b-5e62-9f64-8907" name="Awareness" hidden="false" targetId="06fe-cf59-e98c-03d9" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="77d7-9523-302b-a32d" name="Standard Crew" hidden="false" targetId="bf8f-1a81-fd98-0e6d" primary="true"/>
@@ -258,6 +238,13 @@
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ad55-0607-d9cb-245b" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="dee8-afa8-7dcc-2223" name="Area of Focus" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="e585-89bf-f703-d629">The Lead Scientist is a paragon of research in their field. Select either Alien Tech, Xenobiology, or Chemistry. Whenever the Lead Scientist makes a Challenge Test in the area of their selection (e.g. they have selected Alien Tech and are making an Intelligence Challenge Test to repair a broken piece of technology in Space Station Zero), they may select the highest odd-numbered roll and move it up one (e.g. if the highest odd-numbered roll was 9, they could move it up to 10).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
         <infoLink id="4143-e769-fdb9-64b4" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
           <modifiers>
@@ -265,6 +252,7 @@
             <modifier type="increment" field="89aa-049e-2e85-0778" value="2"/>
           </modifiers>
         </infoLink>
+        <infoLink id="27f1-7326-e150-884f" name="Armor Tuning" hidden="false" targetId="c5ba-a599-f623-8044" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="20d7-9438-ad0a-f7f5" name="New CategoryLink" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="true"/>
@@ -298,11 +286,13 @@
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="af1a-b9d6-cee5-642e" type="max"/>
       </constraints>
-      <rules>
-        <rule id="7b84-c0e1-7262-a869" name="Hard to Kill" hidden="false">
-          <description>Whenever a Veteran Soldier suffers damage as the result of a Combat Challenge Test, reduce the damage they suffer by 1 to a minimum of 0.</description>
-        </rule>
-      </rules>
+      <profiles>
+        <profile id="59b2-e134-be0e-e3f0" name="Hard to Kill" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="e585-89bf-f703-d629">Whenever a Veteran Soldier suffers damage as the result of a Combat Challenge Test, reduce the damage they suffer by 1 to a minimum of 0.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
         <infoLink id="b4f1-1bac-c020-7296" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
           <modifiers>
@@ -310,6 +300,7 @@
             <modifier type="increment" field="2a17-4eba-5384-0241" value="2"/>
           </modifiers>
         </infoLink>
+        <infoLink id="d0d7-cd82-82db-e44b" name="Combat Specialist" hidden="false" targetId="1841-cbd4-53e3-9131" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9d29-0910-9650-8c19" name="New CategoryLink" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="true"/>
@@ -343,19 +334,15 @@
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a38a-8d44-f9d8-c7c1" type="max"/>
       </constraints>
-      <rules>
-        <rule id="8e24-da49-0c5c-2219" name="Bypass" hidden="false">
-          <description>Once per Challenge, when making an Intelligence or Reaction Challenge test as an Action during their Activation, they may treat the Target Number as 0 instead of its normal value.</description>
-        </rule>
-      </rules>
+      <profiles>
+        <profile id="9657-9d11-a777-0f9b" name="Bypass" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="e585-89bf-f703-d629">Once per Challenge, when making an Intelligence or Reaction Challenge test as an Action during their Activation, they may treat the Target Number as 0 instead of its normal value.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
-        <infoLink id="be5a-47e5-dc86-c601" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Chief Engineer"/>
-            <modifier type="increment" field="003c-4932-401d-6873" value="1"/>
-            <modifier type="increment" field="89aa-049e-2e85-0778" value="1"/>
-          </modifiers>
-        </infoLink>
+        <infoLink id="e19c-911a-1ee3-24a4" name="Engineer" hidden="false" targetId="8777-421f-f998-b85d" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="70e3-3280-6e3d-7bfc" name="New CategoryLink" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="true"/>
@@ -387,14 +374,13 @@
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f9d8-05a2-bf91-69a7" type="max"/>
       </constraints>
-      <rules>
-        <rule id="b3c6-4484-9295-e4fe" name="Awareness" hidden="false">
-          <description>Whenever a Pilot crew member makes a Reaction Challenge Test to avoid damage or spot a Hidden creature, they may roll two additional dice. </description>
-        </rule>
-        <rule id="2d0c-c993-76fc-c7c5" name="Ultimate Ace" hidden="false">
-          <description>Whenever the Ace Pilot makes a Challenge Test roll, they may reroll a single dice result of 1.</description>
-        </rule>
-      </rules>
+      <profiles>
+        <profile id="e177-9943-73e9-5075" name="Ultimate Ace" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="e585-89bf-f703-d629">Whenever the Ace Pilot makes a Challenge Test roll, they may reroll a single dice result of 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
         <infoLink id="bb44-4b29-bc98-ce08" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
           <modifiers>
@@ -402,6 +388,7 @@
             <modifier type="increment" field="003c-4932-401d-6873" value="2"/>
           </modifiers>
         </infoLink>
+        <infoLink id="b35c-36c2-1460-f62f" name="Awareness" hidden="false" targetId="06fe-cf59-e98c-03d9" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6c0e-c439-9533-2a13" name="New CategoryLink" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="true"/>
@@ -411,92 +398,80 @@
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="21ca-dfa4-8264-0cbb" name="Commander" hidden="false" collective="false" import="true" type="upgrade">
-      <rules>
-        <rule id="d7b2-3dff-fc12-e6c6" name="Logistics Expert" hidden="true">
+      <profiles>
+        <profile id="9de6-2bfa-424c-fa10" name="Sneaky Scoundrel" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b87-fbc1-166e-0963" type="notEqualTo"/>
+              </conditions>
             </modifier>
           </modifiers>
-          <description>Once per turn, whenever a crew member - including the Commander - begins an activation within 3 inches of the Commander with the Logistics Expert ability, they may move twice their Move stat in inches (this does not cost their action, and they may still use their atction to move as normal).</description>
-        </rule>
-        <rule id="2237-f720-9ac1-0d06" name="Practiced Scientist" hidden="true">
+          <characteristics>
+            <characteristic name="Description" typeId="e585-89bf-f703-d629">Once per turn, when an opponent makes a roll to retain Initiative (see page 13), a Commander with the Sneaky Scoundrel ability may force the opponent to reroll that roll. </characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fa49-35a8-51e8-c43f" name="Logistics Expert" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="notEqualTo"/>
+              </conditions>
             </modifier>
           </modifiers>
-          <description>Whenever a commander with the Practiced Scientist ability uses Intelligence in a Challenge Test and fails a check, they may immediately reroll that check.</description>
-        </rule>
-        <rule id="f91c-3261-f693-9a11" name="Senior Doctor" hidden="true">
+          <characteristics>
+            <characteristic name="Description" typeId="e585-89bf-f703-d629">Once per turn, whenever a crew member - including the Commander - begins an activation within 3 inches of the Commander with the Logistics Expert ability, they may move twice their Move stat in inches (this does not cost their action, and they may still use their atction to move as normal).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fcd6-8361-58dc-33d4" name="Practiced Scientist" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="notEqualTo"/>
+              </conditions>
             </modifier>
           </modifiers>
-          <description>A commander with the Senior Doctor ability can use Medical Attention in the same manner as a Medical Officer and may reroll one of the dice when they make such a check.</description>
-        </rule>
-        <rule id="dedb-c51c-c71a-61a7" name="Sneaky Scoundrel" hidden="true">
+          <characteristics>
+            <characteristic name="Description" typeId="e585-89bf-f703-d629">Whenever a commander with the Practiced Scientist ability uses Intelligence in a Challenge Test and fails a check, they may immediately reroll that check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="59cd-3774-81b4-c696" name="Senior Doctor" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b87-fbc1-166e-0963" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="notEqualTo"/>
+              </conditions>
             </modifier>
           </modifiers>
-          <description>Once per turn, when an opponent makes a roll to retain Initiative (see page 13), a Commander with the Sneaky Scoundrel ability may force the opponent to reroll that roll. </description>
-        </rule>
-        <rule id="7694-3db0-3b8d-d0d6" name="Survival Specialist" hidden="true">
+          <characteristics>
+            <characteristic name="Description" typeId="e585-89bf-f703-d629">A commander with the Senior Doctor ability can use Medical Attention in the same manner as a Medical Officer and may reroll one of the dice when they make such a check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="569a-e704-f26f-7978" name="Warmaster" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e566-19b3-e3dc-edc9" type="notEqualTo"/>
+              </conditions>
             </modifier>
           </modifiers>
-          <description>Once per game, when a member of the Commander&apos;s crew would be reduced to 0 Life, they are not. Instead, whatever damage was dealt by that Challenge Test is ignored. The Commander may use this ability on themselves.</description>
-        </rule>
-        <rule id="6fc1-87bc-e6f2-cd9f" name="Warmaster" hidden="true">
+          <characteristics>
+            <characteristic name="Description" typeId="e585-89bf-f703-d629">Whenever a commander with the Warmaster ability makes a Combat Challenge Test (to attack or defend), they may select their highest odd roll and move it up one pip to the next highest even result (e.g. if the highsest odd roll was a 9, the Commander may change that result to a 10). This may result in a Critical Success or remove a Critical Failure.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="707e-7d57-521a-745f" name="Survival Specialist" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c43-ec9c-48c4-185e" type="notEqualTo"/>
+              </conditions>
             </modifier>
           </modifiers>
-          <description>Whenever a commander with the Warmaster ability makes a Combat Challenge Test (to attack or defend), they may select their highest odd roll and move it up one pip to the next highest even result (e.g. if the highsest odd roll was a 9, the Commander may change that result to a 10). This may result in a Critical Success or remove a Critical Failure.</description>
-        </rule>
-      </rules>
+          <characteristics>
+            <characteristic name="Description" typeId="e585-89bf-f703-d629">Once per game, when a member of the Commander&apos;s crew would be reduced to 0 Life, they are not. Instead, whatever damage was dealt by that Challenge Test is ignored. The Commander may use this ability on themselves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
         <infoLink id="4e94-932d-f672-91e6" name="Crewmember" hidden="false" targetId="203e-a807-d74e-479c" type="profile">
           <modifiers>
@@ -580,6 +555,10 @@
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="9967-4ac2-5e12-5a56" name="Stat Points" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b45-ae68-a54d-345c" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db0b-7e69-9739-f46c" type="max"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="a1a1-9291-0c74-885d" name="+1 Life" hidden="false" collective="false" import="true" type="upgrade"/>
             <selectionEntry id="5c44-2fb3-57e8-4176" name="+1 Intelligence" hidden="false" collective="false" import="true" type="upgrade"/>
@@ -594,4 +573,31 @@
       </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="8777-421f-f998-b85d" name="Weapon Tuning" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="e585-89bf-f703-d629">At the start of a Challenge, as long as the Engineer is present in the crew and alive, they may select a single Weapon and increase the bonus to the combat Stat for that weapon by 1. This bonus is retained for that challenge only. This bonus may not be applied to a single Weapon more than once (in the case of multiple engineers).							</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c5ba-a599-f623-8044" name="Armor Tuning" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="e585-89bf-f703-d629">Whenever a Pilot crew member makes a Reaction Challenge Test to avoid damage or spot a Hidden creature, they may roll two additional dice. </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="06fe-cf59-e98c-03d9" name="Awareness" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="e585-89bf-f703-d629"/>
+      </characteristics>
+    </profile>
+    <profile id="70f5-2a04-9bd4-48f9" name="Medical Attention" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="e585-89bf-f703-d629">As an action, a Medical Officer may make an Intelligence Challege Test X (6+) on any crew member or enemy creature - including themselves - that is within 1&quot; with at least 1 Life remaining. Each success restores 1 point of Life to that crew member or creature.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1841-cbd4-53e3-9131" name="Combat Specialist" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="e585-89bf-f703-d629">Once per turn, when the Soldier makes a Combat Challenge Test, they may select any two dice from the results and reroll those dice.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>

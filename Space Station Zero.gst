@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c61d-e0ff-2c07-f041" name="Space Station Zero" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c61d-e0ff-2c07-f041" name="Space Station Zero" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profileTypes>
     <profileType id="71d8-c796-fa89-356f" name="Model">
       <characteristicTypes>
@@ -534,7 +534,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="785d-85ae-ccc1-b087" name="Advanced Weaponry" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="785d-85ae-ccc1-b087" name="Advanced Weaponry" hidden="true" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -680,6 +680,7 @@
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3a64-ec8f-d20d-4f06" type="equalTo"/>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="01df-3bb2-8611-ac18" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
