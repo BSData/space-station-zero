@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2d4a-8d14-23cf-0e21" name="Crew" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="c61d-e0ff-2c07-f041" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2d4a-8d14-23cf-0e21" name="Crew" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="c61d-e0ff-2c07-f041" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="12de-52d2-71aa-1dc2" name="+1 Life" hidden="false"/>
     <categoryEntry id="f2ee-0bdd-16cc-77ea" name="+1 Combat" hidden="false"/>
@@ -1218,12 +1218,12 @@
     </profile>
     <profile id="c5ba-a599-f623-8044" name="Armor Tuning" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
       <characteristics>
-        <characteristic name="Description" typeId="e585-89bf-f703-d629">Whenever a Pilot crew member makes a Reaction Challenge Test to avoid damage or spot a Hidden creature, they may roll two additional dice. </characteristic>
+        <characteristic name="Description" typeId="e585-89bf-f703-d629">At the start of a Challenge, as long as the Scientist is present in the crew and alive, they may select a single Armor and increase the Armor value of that Armor by 2. This bonus is retained for that challenge only. This bonus may not be applied to a single Armor more than once (in the case of multiple Scientists). </characteristic>
       </characteristics>
     </profile>
     <profile id="06fe-cf59-e98c-03d9" name="Awareness" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
       <characteristics>
-        <characteristic name="Description" typeId="e585-89bf-f703-d629"/>
+        <characteristic name="Description" typeId="e585-89bf-f703-d629">Whenever a Pilot crew member makes a Reaction Challenge Test to avoid damage or spot a Hidden creature, they may roll two additional dice. </characteristic>
       </characteristics>
     </profile>
     <profile id="70f5-2a04-9bd4-48f9" name="Medical Attention" hidden="false" typeId="180a-d5e7-1ecd-a627" typeName="Ability">
