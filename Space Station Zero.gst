@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c61d-e0ff-2c07-f041" name="Space Station Zero" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c61d-e0ff-2c07-f041" name="Space Station Zero" revision="3" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profileTypes>
     <profileType id="71d8-c796-fa89-356f" name="Model">
       <characteristicTypes>
@@ -170,6 +170,13 @@
           </constraints>
         </categoryLink>
         <categoryLink id="1ed0-3048-27ca-7130" name="Advanced Crew" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="false">
+          <modifiers>
+            <modifier type="set" field="8c63-48db-4213-a78e" value="2.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c63-48db-4213-a78e" type="max"/>
           </constraints>
@@ -198,6 +205,13 @@
           </constraints>
         </categoryLink>
         <categoryLink id="65d7-4029-8501-14ef" name="Advanced Crew" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="false">
+          <modifiers>
+            <modifier type="set" field="31bf-5dc1-49b8-6b90" value="2.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="31bf-5dc1-49b8-6b90" type="max"/>
           </constraints>
@@ -226,6 +240,13 @@
           </constraints>
         </categoryLink>
         <categoryLink id="c124-5864-b2ed-d9a8" name="Advanced Crew" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="false">
+          <modifiers>
+            <modifier type="set" field="2f1c-516f-9fdf-7fb1" value="2.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2f1c-516f-9fdf-7fb1" type="max"/>
           </constraints>
