@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2d4a-8d14-23cf-0e21" name="Crew" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="c61d-e0ff-2c07-f041" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2d4a-8d14-23cf-0e21" name="Crew" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="c61d-e0ff-2c07-f041" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="12de-52d2-71aa-1dc2" name="+1 Life" hidden="false"/>
     <categoryEntry id="f2ee-0bdd-16cc-77ea" name="+1 Combat" hidden="false"/>
@@ -204,11 +204,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="c79b-447a-963b-10ce" value="2.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
-          </conditions>
-        </modifier>
+        <modifier type="set" field="c79b-447a-963b-10ce" value="1.0"/>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c79b-447a-963b-10ce" type="max"/>
@@ -398,11 +394,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="ad55-0607-d9cb-245b" value="2.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
-          </conditions>
-        </modifier>
+        <modifier type="set" field="ad55-0607-d9cb-245b" value="1.0"/>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ad55-0607-d9cb-245b" type="max"/>
@@ -473,11 +465,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="af1a-b9d6-cee5-642e" value="2.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
-          </conditions>
-        </modifier>
+        <modifier type="set" field="af1a-b9d6-cee5-642e" value="1.0"/>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="af1a-b9d6-cee5-642e" type="max"/>
@@ -548,11 +536,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="a38a-8d44-f9d8-c7c1" value="2.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
-          </conditions>
-        </modifier>
+        <modifier type="set" field="a38a-8d44-f9d8-c7c1" value="1.0"/>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a38a-8d44-f9d8-c7c1" type="max"/>
@@ -622,11 +606,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="f9d8-05a2-bf91-69a7" value="2.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
-          </conditions>
-        </modifier>
+        <modifier type="set" field="f9d8-05a2-bf91-69a7" value="1.0"/>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f9d8-05a2-bf91-69a7" type="max"/>
