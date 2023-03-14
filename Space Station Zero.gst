@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c61d-e0ff-2c07-f041" name="Space Station Zero" revision="3" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c61d-e0ff-2c07-f041" name="Space Station Zero" revision="6" battleScribeVersion="2.03" authorName="Car_Tag" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <readme>Please submit bug reports at https://github.com/BSData/space-station-zero/issues</readme>
   <profileTypes>
     <profileType id="71d8-c796-fa89-356f" name="Model">
       <characteristicTypes>
@@ -394,7 +395,7 @@
               </profiles>
               <rules>
                 <rule id="331d-cce9-297a-cb08" name="Psionic Talent" hidden="false">
-                  <description>Your Commander is Psionic and gains the following ability.</description>
+                  <description>Your Commander is Psionic and gains the Psionic Crush ability.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -471,12 +472,25 @@
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="67b7-40e9-ba71-a0c6" name="Gear" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="b5f2-3ada-19a4-ac03" name=" Show Advanced Weaponry" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="52cd-775a-40d4-6ccb" type="max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="22fb-46ec-dc6b-210d" name=" Show Mission Rewards" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4dab-c3cf-d489-64aa" type="max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="7d20-4239-fcb1-dde4" name="General Equipment" hidden="false" collective="false" import="true" targetId="e2ac-f0f4-176e-f2ba" type="selectionEntryGroup"/>
         <entryLink id="14d0-b37a-5037-b4a2" name="Medical Equipment" hidden="false" collective="false" import="true" targetId="803a-001c-f82a-17d6" type="selectionEntryGroup"/>
         <entryLink id="6a7b-c1d2-c5b9-786e" name="Advanced Weaponry" hidden="false" collective="false" import="true" targetId="785d-85ae-ccc1-b087" type="selectionEntryGroup"/>
         <entryLink id="f2a4-3a11-9738-1e26" name="Scientific Gear" hidden="false" collective="false" import="true" targetId="82bb-1bd4-5fae-faa2" type="selectionEntryGroup"/>
         <entryLink id="15aa-a8b4-0af2-78df" name="Advanced Technology" hidden="false" collective="false" import="true" targetId="5494-efda-20a3-c878" type="selectionEntryGroup"/>
+        <entryLink id="a9a1-b1dc-32c1-191c" name="Mission Rewards" hidden="false" collective="false" import="true" targetId="8f07-fef0-7c93-5f98" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="803a-001c-f82a-17d6" name="Medical Equipment" hidden="false" collective="false" import="true">
@@ -565,6 +579,7 @@
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3a64-ec8f-d20d-4f06" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b5f2-3ada-19a4-ac03" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -693,7 +708,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="5494-efda-20a3-c878" name="Advanced Technology" hidden="true" collective="false" import="true">
+    <selectionEntryGroup id="5494-efda-20a3-c878" name="Advanced Technology" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -790,6 +805,31 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8f07-fef0-7c93-5f98" name="Mission Rewards" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="22fb-46ec-dc6b-210d" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry id="e360-84f1-40e9-26ef" name="Challenge 13 - Fusion Ion Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="f8b8-0c85-0927-597b" name="Fusion Ion Cannon" hidden="false" typeId="947b-4381-78a5-089c" typeName="Item">
+              <characteristics>
+                <characteristic name="Description" typeId="07c0-aaef-2d5e-cd09">User gains +4 dice to Combat Challenge Tests.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="eea5-af29-e37e-4344" name="Energy" hidden="false" targetId="2719-c512-2a40-f603" primary="false"/>
+            <categoryLink id="dcfa-49bc-6651-8d78" name="Ranged" hidden="false" targetId="0a0a-cd88-1bb7-bfbd" primary="false"/>
+            <categoryLink id="3681-3c5d-800c-34a4" name="Weapon" hidden="false" targetId="3397-c33a-d307-d65f" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2d4a-8d14-23cf-0e21" name="Crew" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="c61d-e0ff-2c07-f041" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2d4a-8d14-23cf-0e21" name="Crew" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="c61d-e0ff-2c07-f041" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="12de-52d2-71aa-1dc2" name="+1 Life" hidden="false"/>
     <categoryEntry id="f2ee-0bdd-16cc-77ea" name="+1 Combat" hidden="false"/>
