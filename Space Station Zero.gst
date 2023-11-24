@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c61d-e0ff-2c07-f041" name="Space Station Zero" revision="6" battleScribeVersion="2.03" authorName="Car_Tag" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c61d-e0ff-2c07-f041" name="Space Station Zero" revision="7" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>Please submit bug reports at https://github.com/BSData/space-station-zero/issues</readme>
   <profileTypes>
     <profileType id="71d8-c796-fa89-356f" name="Model">
@@ -39,118 +39,118 @@
     <categoryEntry id="030e-ed0c-8fed-59e3" name="Ship Type" hidden="false"/>
     <categoryEntry id="0629-5210-24f5-53f3" name="Medical Officer" hidden="false">
       <modifiers>
-        <modifier type="set" field="e5c3-d8a1-af4a-622e" value="2.0">
+        <modifier type="set" field="e5c3-d8a1-af4a-622e" value="2">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
+                <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="e5c3-d8a1-af4a-622e" value="4.0">
+        <modifier type="set" field="e5c3-d8a1-af4a-622e" value="4">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
+                <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="e5c3-d8a1-af4a-622e" value="3.0">
+        <modifier type="set" field="e5c3-d8a1-af4a-622e" value="3">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="91ea-fa1e-1d78-4077" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
+                <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="91ea-fa1e-1d78-4077" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e5c3-d8a1-af4a-622e" type="min"/>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e5c3-d8a1-af4a-622e" type="min"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="01df-3bb2-8611-ac18" name="Commander" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4df3-2474-ebdd-299e" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4df3-2474-ebdd-299e" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="95ec-fa90-9402-5efb" name="Scientist Crew" hidden="false">
       <modifiers>
-        <modifier type="set" field="e7f1-ca2d-e37d-11de" value="3.0">
+        <modifier type="set" field="e7f1-ca2d-e37d-11de" value="3">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="91ea-fa1e-1d78-4077" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
+                <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="91ea-fa1e-1d78-4077" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="e7f1-ca2d-e37d-11de" value="4.0">
+        <modifier type="set" field="e7f1-ca2d-e37d-11de" value="4">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
+                <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="e7f1-ca2d-e37d-11de" value="2.0">
+        <modifier type="set" field="e7f1-ca2d-e37d-11de" value="2">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
+                <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e7f1-ca2d-e37d-11de" type="min"/>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e7f1-ca2d-e37d-11de" type="min"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="7134-7ced-1147-702f" name="Soldier Crew" hidden="false">
       <modifiers>
-        <modifier type="set" field="f393-8327-71d2-afaa" value="2.0">
+        <modifier type="set" field="f393-8327-71d2-afaa" value="2">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
+                <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="f393-8327-71d2-afaa" value="3.0">
+        <modifier type="set" field="f393-8327-71d2-afaa" value="3">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="91ea-fa1e-1d78-4077" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
+                <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="91ea-fa1e-1d78-4077" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="f393-8327-71d2-afaa" value="4.0">
+        <modifier type="set" field="f393-8327-71d2-afaa" value="4">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
+                <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f393-8327-71d2-afaa" type="min"/>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f393-8327-71d2-afaa" type="min"/>
       </constraints>
     </categoryEntry>
   </categoryEntries>
@@ -160,32 +160,32 @@
         <categoryLink id="b9df-89fd-2c98-7e35" name="Commander" hidden="false" targetId="01df-3bb2-8611-ac18" primary="false"/>
         <categoryLink id="9f92-8115-5c56-7af7" name="Standard Crew" hidden="false" targetId="bf8f-1a81-fd98-0e6d" primary="false">
           <modifiers>
-            <modifier type="decrement" field="9a1f-ec57-c08e-9291" value="1.0">
+            <modifier type="decrement" field="9a1f-ec57-c08e-9291" value="1">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea10-62bf-1b14-ff55" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea10-62bf-1b14-ff55" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a1f-ec57-c08e-9291" type="max"/>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a1f-ec57-c08e-9291" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="1ed0-3048-27ca-7130" name="Advanced Crew" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="false">
           <modifiers>
-            <modifier type="set" field="8c63-48db-4213-a78e" value="2.0">
+            <modifier type="set" field="8c63-48db-4213-a78e" value="2">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c63-48db-4213-a78e" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c63-48db-4213-a78e" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="2c98-d908-c4d1-16b0" name="Ship Type" hidden="false" targetId="030e-ed0c-8fed-59e3" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7416-1f63-3ae5-247b" type="min"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="765f-4f49-5738-867c" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7416-1f63-3ae5-247b" type="min"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="765f-4f49-5738-867c" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -195,32 +195,32 @@
         <categoryLink id="a974-3ad3-aedb-366a" name="Commander" hidden="false" targetId="01df-3bb2-8611-ac18" primary="false"/>
         <categoryLink id="02d4-aa45-e0dd-c046" name="Standard Crew" hidden="false" targetId="bf8f-1a81-fd98-0e6d" primary="false">
           <modifiers>
-            <modifier type="decrement" field="80b3-2de2-0d9d-d7e7" value="1.0">
+            <modifier type="decrement" field="80b3-2de2-0d9d-d7e7" value="1">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea10-62bf-1b14-ff55" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea10-62bf-1b14-ff55" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80b3-2de2-0d9d-d7e7" type="max"/>
+            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80b3-2de2-0d9d-d7e7" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="65d7-4029-8501-14ef" name="Advanced Crew" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="false">
           <modifiers>
-            <modifier type="set" field="31bf-5dc1-49b8-6b90" value="2.0">
+            <modifier type="set" field="31bf-5dc1-49b8-6b90" value="2">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="31bf-5dc1-49b8-6b90" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="31bf-5dc1-49b8-6b90" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="c642-e647-4116-bfa7" name="Ship Type" hidden="false" targetId="030e-ed0c-8fed-59e3" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3225-76e5-5503-996e" type="min"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="49de-c783-f70c-5c52" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3225-76e5-5503-996e" type="min"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="49de-c783-f70c-5c52" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -230,32 +230,32 @@
         <categoryLink id="41e7-2e3d-1a85-d5f0" name="Commander" hidden="false" targetId="01df-3bb2-8611-ac18" primary="false"/>
         <categoryLink id="0dea-a915-b46b-804e" name="Standard Crew" hidden="false" targetId="bf8f-1a81-fd98-0e6d" primary="false">
           <modifiers>
-            <modifier type="decrement" field="7f56-8c49-1680-7871" value="1.0">
+            <modifier type="decrement" field="7f56-8c49-1680-7871" value="1">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea10-62bf-1b14-ff55" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea10-62bf-1b14-ff55" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f56-8c49-1680-7871" type="max"/>
+            <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f56-8c49-1680-7871" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="c124-5864-b2ed-d9a8" name="Advanced Crew" hidden="false" targetId="ea10-62bf-1b14-ff55" primary="false">
           <modifiers>
-            <modifier type="set" field="2f1c-516f-9fdf-7fb1" value="2.0">
+            <modifier type="set" field="2f1c-516f-9fdf-7fb1" value="2">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c43-ec9c-48c4-185e" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2f1c-516f-9fdf-7fb1" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2f1c-516f-9fdf-7fb1" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="f015-4e9c-3368-a369" name="Ship Type" hidden="false" targetId="030e-ed0c-8fed-59e3" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c424-51b1-2af0-9bf7" type="min"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9464-e5bd-fc82-14f9" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c424-51b1-2af0-9bf7" type="min"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9464-e5bd-fc82-14f9" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -264,8 +264,8 @@
   <entryLinks>
     <entryLink id="62cb-4e43-285f-598a" name="Ship Type" hidden="false" collective="false" import="true" targetId="f29d-d46d-a874-0e17" type="selectionEntry">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a781-f409-0085-ca90" type="min"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a685-c4a4-653a-eee4" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a781-f409-0085-ca90" type="min"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a685-c4a4-653a-eee4" type="min"/>
       </constraints>
     </entryLink>
   </entryLinks>
@@ -275,10 +275,10 @@
         <categoryLink id="8ca3-3dfe-b9f0-bad2" name="New CategoryLink" hidden="false" targetId="030e-ed0c-8fed-59e3" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7385-3add-52ec-a62c" name=" Ship Type" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="7385-3add-52ec-a62c" name="Ship Type" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="70e1-7d7d-eab8-9928" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="cfb8-e05e-d2d2-0b3d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="70e1-7d7d-eab8-9928" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="cfb8-e05e-d2d2-0b3d" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="7e72-8b68-3ea1-3746" name="Medical" hidden="false" collective="false" import="true" type="upgrade"/>
@@ -291,7 +291,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="960b-bed9-5163-928e" name="Edge" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b04f-eabd-bb65-6777" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b04f-eabd-bb65-6777" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="331a-15b3-717c-d441" name="Armored Force" hidden="false" collective="false" import="true" type="upgrade">
@@ -469,18 +469,36 @@
             <categoryLink id="368f-3def-46a4-fb3a" name="Weapon" hidden="false" targetId="3397-c33a-d307-d65f" primary="false"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rapid Ascension Gear" hidden="false" id="20d9-4635-e41a-24c6" page="26" publicationId="813c-840a-1cbb-5ccb">
+          <profiles>
+            <profile name="Rapid Ascension Gear" typeId="947b-4381-78a5-089c" typeName="Item" hidden="false" id="dadb-dc63-662-48c7" publicationId="813c-840a-1cbb-5ccb" page="26">
+              <characteristics>
+                <characteristic name="Description" typeId="07c0-aaef-2d5e-cd09">When climbing, the user doesn’t pay 2” of movement for each 1” moved vertically. The user may instead pay 1” of movement for 1” traveled vertically. The user must still end this movement on a horizontal surface.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Stimulant System" hidden="false" id="1c85-6e36-6214-3f16" publicationId="813c-840a-1cbb-5ccb" page="26">
+          <profiles>
+            <profile name="Stimulant System" typeId="947b-4381-78a5-089c" typeName="Item" hidden="false" id="23af-d07a-cc7c-ead0" publicationId="813c-840a-1cbb-5ccb" page="26">
+              <characteristics>
+                <characteristic name="Description" typeId="07c0-aaef-2d5e-cd09">The user gains +1 die when making a Movement Challenge Test.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="67b7-40e9-ba71-a0c6" name="Gear" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="b5f2-3ada-19a4-ac03" name=" Show Advanced Weaponry" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b5f2-3ada-19a4-ac03" name="Show Advanced Weaponry" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="52cd-775a-40d4-6ccb" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="52cd-775a-40d4-6ccb" type="max"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry id="22fb-46ec-dc6b-210d" name=" Show Mission Rewards" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="22fb-46ec-dc6b-210d" name="Show Mission Rewards" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4dab-c3cf-d489-64aa" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4dab-c3cf-d489-64aa" type="max"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -499,8 +517,8 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfd-f907-f3cb-9439" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -567,6 +585,30 @@
             <categoryLink id="c6e3-9ddb-b96b-dc84" name="Medical" hidden="false" targetId="1333-32a2-3535-b08d" primary="false"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Improved Stim Shot" hidden="false" id="67d5-1d60-c37a-655c">
+          <profiles>
+            <profile name="Improved Stim Shot" typeId="947b-4381-78a5-089c" typeName="Item" hidden="false" id="c14-5de9-b753-3e6a">
+              <characteristics>
+                <characteristic name="Description" typeId="07c0-aaef-2d5e-cd09">Once during each Challenge, when the user activates, they may choose to gain +1 to Movement and +1 to all Life Challenge Tests during that activation.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1333-32a2-3535-b08d" id="ef2-ec58-7da6-f706" primary="false" name="Medical"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Resuscitation Module" hidden="false" id="d42-b65a-ee58-a303">
+          <profiles>
+            <profile name="Resuscitation Module" typeId="947b-4381-78a5-089c" typeName="Item" hidden="false" id="720a-3ecb-465f-3bde">
+              <characteristics>
+                <characteristic name="Description" typeId="07c0-aaef-2d5e-cd09">Once during each Challenge, when a crew member is put Out of Action, you may choose to leave the model on the play board. That model takes no actions, suffers no damage, makes no tests, and may not activate. It is Out of Action and simply a placeholder token for all game effects. At any point later in the Challenge, the user of this equipment may move within 1” of the Out of Action model and use this equipment. If they do so, they make an Intelligence Challenge Test X (6+). The Out of Action crew member is returned to play with 1 Life per success. This cannot restore a model above their maximum Life. This equipment may be used once per Challenge.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1333-32a2-3535-b08d" id="a653-fc9-51ec-2652" primary="false" name="Medical"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="785d-85ae-ccc1-b087" name="Advanced Weaponry" hidden="true" collective="false" import="true">
@@ -575,11 +617,11 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b87-fbc1-166e-0963" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3a64-ec8f-d20d-4f06" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b5f2-3ada-19a4-ac03" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b87-fbc1-166e-0963" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3a64-ec8f-d20d-4f06" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b5f2-3ada-19a4-ac03" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -642,6 +684,34 @@
             <categoryLink id="7421-a0b5-81b8-915c" name="Ranged" hidden="false" targetId="0a0a-cd88-1bb7-bfbd" primary="false"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Explosive Kinetic Missile Weapon" hidden="false" id="9512-4449-341e-23de" publicationId="813c-840a-1cbb-5ccb" page="27">
+          <categoryLinks>
+            <categoryLink targetId="3397-c33a-d307-d65f" id="d8e7-f973-e7db-99f8" primary="false" name="Weapon"/>
+            <categoryLink targetId="0a0a-cd88-1bb7-bfbd" id="bcae-4d28-5cc4-14d1" primary="false" name="Ranged"/>
+            <categoryLink targetId="f484-9489-b30b-eae7" id="c7ca-c473-cb15-70c6" primary="false" name="Kinetic"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Explosive Kinetic Missile Weapon" typeId="947b-4381-78a5-089c" typeName="Item" hidden="false" id="7e96-8814-e250-8183" publicationId="813c-840a-1cbb-5ccb" page="27">
+              <characteristics>
+                <characteristic name="Description" typeId="07c0-aaef-2d5e-cd09">User gains +2 dice to Combat Challenge Tests. All other models (crew members and enemies) within 3” of the target must succeed on a Reaction Challenge Test equal to the damage dealt. Any model that fails suffers damage equal to the amount by which they failed the test.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gravitronic Lock Weapon" hidden="false" id="7ee9-38cb-a8da-891" publicationId="813c-840a-1cbb-5ccb" page="27">
+          <categoryLinks>
+            <categoryLink targetId="3397-c33a-d307-d65f" id="c0de-a173-aac6-c7d6" primary="false" name="Weapon"/>
+            <categoryLink targetId="0a0a-cd88-1bb7-bfbd" id="69f3-c3da-d7d4-abfe" primary="false" name="Ranged"/>
+            <categoryLink targetId="2719-c512-2a40-f603" id="c655-c393-7a8e-8cab" primary="false" name="Energy"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Gravitronic Lock Weapon" typeId="947b-4381-78a5-089c" typeName="Item" hidden="false" id="ebfe-ca54-a474-e063" publicationId="813c-840a-1cbb-5ccb" page="27">
+              <characteristics>
+                <characteristic name="Description" typeId="07c0-aaef-2d5e-cd09"> User gains +1 die when making Combat Challenge Tests. In addition, if the attack deals damage, the target of the attack has their Movement reduced to 0 until the end of that target’s next activation.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="82bb-1bd4-5fae-faa2" name="Scientific Gear" hidden="false" collective="false" import="true">
@@ -650,8 +720,8 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e72-8b68-3ea1-3746" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e566-19b3-e3dc-edc9" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -706,6 +776,24 @@
             <categoryLink id="f972-8b8e-6c85-d67f" name="Detection" hidden="false" targetId="aab0-39a8-2742-75c8" primary="false"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Alien Tech Neutralizer" hidden="false" id="a8bc-6fc0-bee6-d345" publicationId="813c-840a-1cbb-5ccb" page="27">
+          <profiles>
+            <profile name="Alien Tech Neutralizer" typeId="947b-4381-78a5-089c" typeName="Item" hidden="false" id="f6e-63f7-2f06-c0ab" publicationId="813c-840a-1cbb-5ccb" page="27">
+              <characteristics>
+                <characteristic name="Description" typeId="07c0-aaef-2d5e-cd09">User reduces all damage suffered from non-combat Challenge Tests involving Alien Technology by 2.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Encyclopedia Xenos" hidden="false" id="a240-1518-1417-a7eb" publicationId="813c-840a-1cbb-5ccb" page="27">
+          <profiles>
+            <profile name="Encyclopedia Xenos" typeId="947b-4381-78a5-089c" typeName="Item" hidden="false" id="601f-e8ba-4db6-e5b6" publicationId="813c-840a-1cbb-5ccb" page="27">
+              <characteristics>
+                <characteristic name="Description" typeId="07c0-aaef-2d5e-cd09">User gains +2 dice to all Combat and Reaction Challenge tests involving Xenobiology.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="5494-efda-20a3-c878" name="Advanced Technology" hidden="false" collective="false" import="true">
@@ -714,9 +802,9 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3a64-ec8f-d20d-4f06" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="01df-3bb2-8611-ac18" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3a64-ec8f-d20d-4f06" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6dd9-d274-5ca0-68b2" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="01df-3bb2-8611-ac18" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -771,6 +859,42 @@
             <categoryLink id="5f7e-94e4-f902-9d01" name="Mobility" hidden="false" targetId="508b-e67c-c965-d8dd" primary="false"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Emergency Cloning Device" hidden="false" id="38d1-bd8a-8481-7fe7">
+          <profiles>
+            <profile name="Emergency Cloning Device" typeId="947b-4381-78a5-089c" typeName="Item" hidden="false" id="110a-b52-2e2f-747">
+              <characteristics>
+                <characteristic name="Description" typeId="07c0-aaef-2d5e-cd09">Single Use for if/when a member of your crew dies (i.e. rolls a 6-11, Dead and Gone on the Injury &amp; Death table, pg. 40, Space Station Zero). Any member of your crew may utilize this equipment and roll an Intelligence Challenge Test 4 (6+). This test is an extended Challenge Test, but may only be attempted once in each Post-Game Process (i.e. after each Challenge). Once successful, you may return this crew member to your roster. Any gear they were carrying may be restored as long as it was recovered when that crew member was killed. This equipment may only be used one time during a campaign.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Exoskeleton" hidden="false" id="5235-db75-8259-dc3d" publicationId="813c-840a-1cbb-5ccb" page="27">
+          <profiles>
+            <profile name="Exoskeleton" typeId="947b-4381-78a5-089c" typeName="Item" hidden="false" id="fc36-f71b-bca0-1b26" publicationId="813c-840a-1cbb-5ccb" page="27">
+              <characteristics>
+                <characteristic name="Description" typeId="07c0-aaef-2d5e-cd09">User gains +1 to Combat Challenge tests and +1 to Movement.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Nanobot Recovery Unit" hidden="false" id="22d8-57dd-dd53-696" publicationId="813c-840a-1cbb-5ccb" page="27">
+          <profiles>
+            <profile name="Nanobot Recovery Unit" typeId="947b-4381-78a5-089c" typeName="Item" hidden="false" id="a323-98c8-4307-d325" publicationId="813c-840a-1cbb-5ccb" page="27">
+              <characteristics>
+                <characteristic name="Description" typeId="07c0-aaef-2d5e-cd09">At the start of the user’s activation, they heal 1 Life. If the user suffers damage at the start of their activation, this Life is gained at the same time that damage is suffered and may prevent the user from being put Out of Action.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Personal Cloaking Device" hidden="false" id="619f-dfd8-146f-940d" publicationId="813c-840a-1cbb-5ccb" page="27">
+          <profiles>
+            <profile name="Personal Cloaking Device" typeId="947b-4381-78a5-089c" typeName="Item" hidden="false" id="2a0e-d25b-a6b6-b7ce" publicationId="813c-840a-1cbb-5ccb" page="27">
+              <characteristics>
+                <characteristic name="Description" typeId="07c0-aaef-2d5e-cd09">As long as the user has not yet activated in the current turn, they gain +3 dice to all Combat Challenge Defense Tests against Ranged attacks. In addition, the user may choose to reroll any 1s on the Combat Defense roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="7be0-9d08-ca66-f540" name="Drone System" hidden="false" collective="false" import="true">
@@ -810,7 +934,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="22fb-46ec-dc6b-210d" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="22fb-46ec-dc6b-210d" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -837,52 +961,52 @@
       <modifiers>
         <modifier type="set" field="2a17-4eba-5384-0241" value="2">
           <conditions>
-            <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
+            <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
           </conditions>
         </modifier>
         <modifier type="set" field="b501-b91d-5b89-30d5" value="3">
           <conditions>
-            <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
+            <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
           </conditions>
         </modifier>
         <modifier type="set" field="e55d-36f3-1e0a-53ea" value="4">
           <conditions>
-            <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
+            <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
           </conditions>
         </modifier>
         <modifier type="set" field="003c-4932-401d-6873" value="3">
           <conditions>
-            <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
+            <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
           </conditions>
         </modifier>
         <modifier type="set" field="89aa-049e-2e85-0778" value="2">
           <conditions>
-            <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
+            <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdb5-dfcd-6c00-fc74" type="instanceOf"/>
           </conditions>
         </modifier>
         <modifier type="set" field="2a17-4eba-5384-0241" value="4">
           <conditions>
-            <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
+            <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
           </conditions>
         </modifier>
         <modifier type="set" field="89aa-049e-2e85-0778" value="4">
           <conditions>
-            <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
+            <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
           </conditions>
         </modifier>
         <modifier type="set" field="003c-4932-401d-6873" value="4">
           <conditions>
-            <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
+            <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
           </conditions>
         </modifier>
         <modifier type="set" field="b501-b91d-5b89-30d5" value="6">
           <conditions>
-            <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
+            <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
           </conditions>
         </modifier>
         <modifier type="set" field="e55d-36f3-1e0a-53ea" value="4">
           <conditions>
-            <condition field="forces" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
+            <condition field="forces" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d0c-9d25-d65a-a2ac" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -895,4 +1019,8 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <publications>
+    <publication name="Space Station Zero Rulebook" hidden="false" id="e292-b460-a272-6639"/>
+    <publication name="Snarl 2023" hidden="false" id="813c-840a-1cbb-5ccb"/>
+  </publications>
 </gameSystem>
